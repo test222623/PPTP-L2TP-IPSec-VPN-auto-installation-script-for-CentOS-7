@@ -70,7 +70,7 @@ if [[ -n "$iprangetmp" ]]; then
 fi
 
 #设置预共享密钥
-mypsk="ueibo.cn"
+mypsk="Michael#2020"
 echo "Please input PSK:"
 printf "(Default PSK: \e[33mueibo.cn\e[0m): "
 read mypsktmp
@@ -79,7 +79,7 @@ if [[ -n "$mypsktmp" ]]; then
 fi
 
 #设置VPN用户名
-username="ueibo.com"
+username="Michael#2020"
 echo "Please input VPN username:"
 printf "(Default VPN username: \e[33mueibo.com\e[0m): "
 read usernametmp
@@ -306,7 +306,7 @@ require-mppe-128
 #mppe-stateless
 # }}}
 
-ms-dns 8.8.4.4
+ms-dns 114.114.114.114
 ms-dns 8.8.8.8
 
 #ms-wins 10.0.0.3
@@ -335,7 +335,7 @@ cat >>/etc/ppp/options.xl2tpd<<EOF
 ipcp-accept-local
 ipcp-accept-remote
 require-mschap-v2
-ms-dns 8.8.8.8
+ms-dns 114.114.114.114
 ms-dns 8.8.4.4
 asyncmap 0
 auth
